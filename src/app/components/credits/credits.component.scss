@@ -1,0 +1,30 @@
+.credits {
+    border-style: dashed;
+    border-radius: 0;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    p {
+        margin-bottom: 0 !important;
+    }
+}
+
+:host-context(.bootstrap) {
+    .credits {
+        background-color: lightgrey;
+        border-color: darkgrey;
+        p {
+            color: rgb(65, 65, 65);
+        }
+    }
+}
+
+:host-context(.bootstrap-dark) {
+    .credits {
+        background-color: #212529;
+        border-color: darkgrey;
+        p {
+            color: #d3d3d3;
+        }
+    }
+}

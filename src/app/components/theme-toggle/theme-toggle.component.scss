@@ -1,0 +1,36 @@
+/* Variables used more than once */
+
+@import "../../../variables";
+
+/* Styles */
+
+.oval {
+    position: relative;
+    margin: 10px;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #0275d8;
+    transition: background-color $transitionTime $transitionStyle;
+}
+
+.ovalSelected {
+    background: #fadc04;
+}
+
+.button {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 3px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $buttonColour;
+    transition: left $transitionTime $transitionStyle, background-color $transitionTime $transitionStyle;
+}
+
+.buttonSelected {
+    left: 25px;
+    background-color: darken($color: $buttonColour, $amount: 40%);
+}
